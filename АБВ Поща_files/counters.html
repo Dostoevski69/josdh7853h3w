@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://img.abv.bg/e/s/counters.html?v=2.2 -->
+<html lang="bg"><script async="async" defer="defer" src="./xgemius.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>АБВ - Gemius</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://img.abv.bg/favicon.ico" rel="shortcut icon">
+<script type="text/javascript" src="./lib.min.js" async=""></script>
+<style type="text/css">
+/* Elements */
+@media only screen and (min-width: 800px) {  }
+
+* { margin: 0; padding: 0; }
+
+body {
+  background: #fff;
+  font: 14px Arial, sans-serif;
+  color: #263238;
+}
+
+img { border: 0; }
+
+/* IDs */
+
+/* Classes */
+
+.x:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+*+html .x { display: inline-block; }
+* html .x { height: 0; }
+
+.fl { float: left; }
+.fr { float: right; }
+</style>
+
+</head>
+<body data-new-gr-c-s-check-loaded="14.1215.0" data-gr-ext-installed="">
+
+<!-- (C)2000-2024 Gemius SA - gemiusPrism  / abv.bg/New mail/Inbox -->
+<script type="text/javascript">
+
+function gemius_pending(i) {
+    window[i] = window[i] || function() {
+        var x = window[i + '_pdata'] = window[i + '_pdata'] || [];
+        x[x.length] = Array.prototype.slice.call(arguments, 0);
+    };
+};
+
+(function(cmds) {
+    var c;
+    while (c = cmds.pop()) gemius_pending(c)
+})(['gemius_cmd', 'gemius_hit', 'gemius_event', 'gemius_init', 'pp_gemius_hit', 'pp_gemius_event', 'pp_gemius_init']);
+
+window.pp_gemius_cmd = window.pp_gemius_cmd || window.gemius_cmd;
+
+(function(d, t) {
+    try {
+        var gt = d.createElement(t),
+            s = d.getElementsByTagName(t)[0],
+            l = 'http' + ((location.protocol === 'https:') ? 's' : '');
+        gt.setAttribute('async', 'async');
+        gt.setAttribute('defer', 'defer');
+        gt.src = l + '://gars.hit.gemius.pl/xgemius.js ';
+        s.parentNode.insertBefore(gt, s);
+    } catch (e) {}
+})(document, 'script');
+
+</script>
+
+<script type="text/javascript">
+((w, t) => {
+
+  console.log( '* Counters v.3.9 *' );
+
+  let events = [];
+
+  w.addEventListener('message', receiveMessage, false);
+
+  function receiveMessage(event)
+  {
+    const 
+        origin = event.origin || event.originalEvent.origin,
+        data = event.data || event.originalEvent.data,
+        check = /abv\.bg|ni\.bg/gi.test( origin ) 
+                && /abv\.bg|ni\.bg/.test( document.referrer );
+
+    if ( check && typeof data === 'string' && data.indexOf('pp_gemius_hit') > -1 ){
+
+      const 
+          arr = data.split('#'),
+          fn = arr[0],
+          id = arr[1],
+          done = events.filter( e => e === id );
+
+      t.postMessage({ event: 'pageloaded', id }, '*'); 
+
+      if( done.length ) return;
+
+      const func = `${fn}('${id}');`;
+
+      events.push( arr[1] );
+      eval( func ); 
+
+      console.log('#~ Gemius event fired: ', events, id, done, data, func);
+
+    }
+
+  }
+
+})(window, top.window);
+</script>
+
+
+
+<iframe id="gemius_hcconn_1736168254258_63994829" name="lsgetframe" width="0" height="0" scrolling="no" src="./lsget.html" style="display: none; visibility: hidden;" uz8e9c21s=""></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
